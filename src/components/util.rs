@@ -176,7 +176,7 @@ use crate::components::ctc::Wav2Vec2ForCTC;
 
 const _TORCH_WEIGHTS: &str = "src/external_weights/model-02042025.pth";
 const MODEL_PATH: &str = "src/model_binaries/model-02042025.mpk";
-const CONFIG_PATH: &str = "src/configs/wav2vec2-base.json";
+const CONFIG_PATH: &str = "src/configs/wav2vec2-base-group.json";
 
 pub fn load_weights_from_torch<B: Backend>(save_to_binary: bool, device: &Device<B>) {
     let config = Wav2Vec2Config::from_json_file(CONFIG_PATH).unwrap();
