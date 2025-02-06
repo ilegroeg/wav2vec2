@@ -21,6 +21,7 @@ use wav2vec2::components::util::write_to_file;
 
 const _CONFIG_PATH: &str = "./src/configs/wav2vec2-base-wonders-phonemes.json";
 
+// test
 fn _benchmark_model<B: Backend>(n_runs: usize, device: &Device<B>) {
     let config = Wav2Vec2Config::from_json_file(_CONFIG_PATH).unwrap();
     println!("config: {:#?}", config);
